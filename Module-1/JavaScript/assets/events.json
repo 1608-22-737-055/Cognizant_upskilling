@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Open Mic Night",
+      "date": "2025-07-12",
+      "category": "music",
+      "seats": 20
+    },
+    {
+      "name": "Tech Meetup",
+      "date": "2025-07-20",
+      "category": "tech",
+      "seats": 15
+    },
+    {
+      "name": "Art Festival",
+      "date": "2025-08-05",
+      "category": "art",
+      "seats": 50
+    }
+  ]
+  

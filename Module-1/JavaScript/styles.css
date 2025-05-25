@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+    color: BLACK;
+    background-image: url('media/bgi.jpg'); 
+        background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    background-color: #004080;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#welcomeBanner{
+    background-color: blue;
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+.highlight,
+span[style]{
+  font-weight: bold;
+  color: darkorange;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+
+  h2 {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px;
+  }
+
+
+  .event-img {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  form {
+    margin: 20px 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #007BFF;
+  }
+  
+  .eventCard {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  
+  #events p {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+  }
+  
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    body {
+      font-size: 14px;
+    }
+  
+    img, video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+

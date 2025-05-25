@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event portal</title>
+    <style>
+        #welcomeBanner{
+            background-color: blue;
+            color:white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight{
+            font-weight: bold;
+            color: darkorange;
+        }
+
+        .event-img {
+          border: 2px solid black;
+          width: 200px;
+           height: 200px;
+         }
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home </a>
+        <a href="#events">Events </a>
+        <a href="#contact">Contact </a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to the community event portal </h1> 
+            <div id="welcomeBanner">Welcome, valued resident!</div>
+            <p><span style="color: red; font-weight: bold;">Limited offer: Register today!</span></p>
+        
+        </section>
+        <section id="events">
+            <h2>Upcoming events</h2>
+            <table>
+                <caption> Communtiy Event Gallery</caption>
+                <tr>
+                    <td><img src="media/monkey.png" alt="Event 1" title="Local Meetup" class="event-img"></td>
+                    <td><img src="media/monkey.png" alt="Event 2" title="Local Meetup" class="event-img"></td>
+                    <td><img src="media/monkey.png" alt="Event 3" title="Local Meetup" class="event-img"></td>
+                </tr>
+                </table>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+          
+            <!-- Category Filter -->
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="music">Music</option>
+              <option value="tech">Tech</option>
+              <option value="art">Art</option>
+            </select>
+        <div id="eventsSection"></div></section>
+        
+        <section id="contact">
+            <h2>Contact us</h2>
+            <form id="registrationForm">
+                <lable>Name: <input type="text" required placeholder="Your Name"></lable> <br>
+                <lable>Email: <input type="email" required placeholder="Your Email"></lable> <br>
+                <lable>Event Date: <input type="date" required> </lable> <br>
+                <label>Event Type:
+                    <select name="" id="preferredEvent" onchange="showFee()">
+                        <option value="meetup">Meetup</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="festival">festival</option>
+                    </select>
+                </label><br>
+                <textarea name="" id="feedback" onkeyup="countChars()" placeholder="Your feedback"></textarea> <br>
+                <label > Phone Number: <input type="tel" id="phone" onblur="validatePhone()" placeholder="Enter phone"></label> <br>
+                <input type="submit" id="submitBtn" onclick="showConfirmation()" value="Submit">
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+            <p id="feeDisplay"></p>
+            <p id="charCount"></p>
+            <p id="confirmation"></p>
+        </section>
+
+        <section>
+            <h2>Event Promo Video</h2>
+            <video id="promoVideo" controls width="400">
+                <source src="media/.mp4" type="video/mp4">
+            </video>
+            <p id="videoMsg"></p>
+        </section>
+
+
+        <section>
+            <h2>Find Nearby Events</h2>
+            <button onclick="findNearbyEvents()">Locate Events Near You</button>
+            <p id="locationDisplay"></p>
+        </section>
+
+        <section>
+            <h2>User Preferences</h2>
+            <button onclick="savePreference()">Save Preference</button>
+            <button onclick="clearPreferences()">Clear Preferences</button>
+        </section>
+
+
+    </main>
+    
+   
+
+    <footer>
+       <p>&copy; 2025 community council </p>
+    </footer>
+    
+
+
+    
+    <script src="main.js" defer></script>
+
+</body>
+</html>
