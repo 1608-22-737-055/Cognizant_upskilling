@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Column Layout</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <body>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="https://images.unsplash.com/photo-1747835369484-97d3f0f782ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              MyBrand
+            </a>
+      
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- Navigation Links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+      
+              <!-- Search Form -->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      
+        <div class="container my-5">
+            <h1 class="text-center text-primary mb-4">Tabbed Navigation</h1>
+        
+            <!-- Tab Navigation -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+              </li>
+            </ul>
+        
+            <!-- Tab Content -->
+            <div class="tab-content mt-4" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h3>Home</h3>
+                <p>Welcome to the home section! Here, you'll find the main content.</p>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h3>Profile</h3>
+                <p>This is the profile section. Add details about yourself here.</p>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h3>Contact</h3>
+                <p>Feel free to reach out using this contact section!</p>
+              </div>
+            </div>
+        
+            <!-- Pill Navigation -->
+            <h2 class="mt-5">Pill Navigation</h2>
+            <ul class="nav nav-pills" id="myPills" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pill-home-tab" data-bs-toggle="pill" data-bs-target="#pill-home" type="button" role="tab" aria-controls="pill-home" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pill-profile-tab" data-bs-toggle="pill" data-bs-target="#pill-profile" type="button" role="tab" aria-controls="pill-profile" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pill-contact-tab" data-bs-toggle="pill" data-bs-target="#pill-contact" type="button" role="tab" aria-controls="pill-contact" aria-selected="false">Contact</button>
+              </li>
+            </ul>
+        
+            <!-- Pill Content -->
+            <div class="tab-content mt-4" id="myPillsContent">
+              <div class="tab-pane fade show active" id="pill-home" role="tabpanel" aria-labelledby="pill-home-tab">
+                <p>Welcome to the home section of Pills!</p>
+              </div>
+              <div class="tab-pane fade" id="pill-profile" role="tabpanel" aria-labelledby="pill-profile-tab">
+                <p>Details about the profile section in Pills.</p>
+              </div>
+              <div class="tab-pane fade" id="pill-contact" role="tabpanel" aria-labelledby="pill-contact-tab">
+                <p>Contact information goes here for Pills navigation.</p>
+              </div>
+            </div>
+          </div>
+        
+
+    <nav class="navbar bg-light">
+        <div class="container">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand text-primary" href="#">MyWebsite</a>
+          <!-- Navbar Links -->
+          <div class="d-flex flex-column flex-md-row align-items-center">
+            <a class="nav-link text-dark" href="#">Home</a>
+            <a class="nav-link text-dark" href="#">About</a>
+            <a class="nav-link text-dark" href="#">Services</a>
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    
+
+  <div class="container mt-4">
+
+    <!-- Row for Sidebar and Content -->
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3 bg-light border p-3">
+        <h5>Sidebar</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Link 1</a></li>
+          <li><a href="#" class="text-decoration-none">Link 2</a></li>
+          <li><a href="#" class="text-decoration-none">Link 3</a></li>
+        </ul>
+      </aside>
+      <!-- Content -->
+      <main class="col-md-9 bg-white border p-3">
+        <h2>Main Content Area</h2>
+        <p>
+          This is the main content section. It occupies a larger space than the sidebar.
+          Resize your browser window to see how the layout adapts.
+        </p>
+        <p>
+          On smaller screens, the sidebar and content stack vertically, while on larger
+          screens, they are displayed side by side.
+        </p>
+      </main>
+    </div>
+  </div>
+
+   
+  <div class="container my-4">
+    <h1 class="text-primary text-center mb-4">Typography Utilities Example</h1>
+
+    <!-- Display Headings -->
+    <section class="mb-4">
+      <h1 class="display-1">Display 1 Heading</h1>
+      <h2 class="display-2">Display 2 Heading</h2>
+      <h3 class="display-3">Display 3 Heading</h3>
+      <h4 class="display-4">Display 4 Heading</h4>
+      <h5 class="display-5">Display 5 Heading</h5>
+      <h6 class="display-6">Display 6 Heading</h6>
+    </section>
+
+    <!-- Lead Text -->
+    <section class="mb-4">
+      <p class="lead">
+        This is a lead paragraph. It emphasizes the introductory content with a slightly larger font size and softer color.
+      </p>
+    </section>
+
+    <!-- Text Weight and Styles -->
+    <section class="mb-4">
+      <p class="fw-bold">This text is bold using <code>fw-bold</code>.</p>
+      <p class="fw-semibold">This text is semibold using <code>fw-semibold</code>.</p>
+      <p class="fw-normal">This text is normal weight using <code>fw-normal</code>.</p>
+      <p class="text-muted">This text is muted using <code>text-muted</code>.</p>
+    </section>
+
+    <!-- Alignment -->
+    <section class="mb-4">
+      <p class="text-start">This text is aligned to the start.</p>
+      <p class="text-center">This text is centered.</p>
+      <p class="text-end">This text is aligned to the end.</p>
+    </section>
+
+    <!-- Additional Text Utilities -->
+    <section class="mb-4">
+      <p class="text-uppercase">This text is uppercase using <code>text-uppercase</code>.</p>
+      <p class="text-lowercase">This text is lowercase using <code>text-lowercase</code>.</p>
+      <p class="text-capitalize">This text is capitalized using <code>text-capitalize</code>.</p>
+    </section>
+  </div>
+
+
+  <div class="container my-5">
+    <h1 class="text-primary text-center mb-4">Text Transformations</h1>
+
+    <!-- Uppercase Text -->
+    <section class="mb-4">
+      <h2 class="text-uppercase">This Heading is Uppercase</h2>
+      <p class="text-uppercase">
+        This paragraph uses the <code>text-uppercase</code> class to transform all text to uppercase.
+      </p>
+    </section>
+
+    <!-- Lowercase Text -->
+    <section class="mb-4">
+      <h2 class="text-lowercase">this heading is lowercase</h2>
+      <p class="text-lowercase">
+        This paragraph uses the <code>text-lowercase</code> class to transform all text to lowercase.
+      </p>
+    </section>
+
+    <!-- Capitalized Text -->
+    <section class="mb-4">
+      <h2 class="text-capitalize">this heading is capitalized</h2>
+      <p class="text-capitalize">
+        This paragraph uses the <code>text-capitalize</code> class to capitalize the first letter of each word.
+      </p>
+    </section>
+
+    <!-- Mixed Text Styles -->
+    <section class="mb-48">
+      <h3>Combining Transformations</h3>
+      <p class="text-uppercase text-muted">
+        This text is uppercase and muted for emphasis.
+      </p>
+      <p class="text-lowercase fw-bold">
+        This text is lowercase and bold for visibility.
+      </p>
+      <p class="text-capitalize text-success">
+        this text is capitalized and styled in green.
+      </p>
+    </section>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center text-primary mb-4">Bootstrap Buttons</h1>
+
+    <!-- Contextual Buttons -->
+    <div class="mb-4">
+      <h3>Contextual Buttons</h3>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+    </div>
+
+    <!-- Outlined Buttons -->
+    <div class="mb-4">
+      <h3>Outlined Buttons</h3>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+      <button class="btn btn-outline-info">Info</button>
+      <button class="btn btn-outline-light">Light</button>
+      <button class="btn btn-outline-dark">Dark</button>
+    </div>
+
+    <!-- Button Sizes -->
+    <div class="mb-4">
+      <h3>Button Sizes</h3>
+      <button class="btn btn-primary btn-lg">Large Button</button>
+      <button class="btn btn-secondary btn-sm">Small Button</button>
+    </div>
+
+    <!-- Block-Level Button -->
+    <div class="mb-4">
+      <h3>Block-Level Button</h3>
+      <button class="btn btn-success w-100">Block-Level Button</button>
+    </div>
+  </div>
+  
+  
+  <div class="container my-5">
+    <h1 class="text-center text-primary mb-4">Button Groups & Toggle Buttons</h1>
+
+    <!-- Button Group -->
+    <div class="mb-4">
+      <h3>Button Group</h3>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+      </div>
+    </div>
+
+    <!-- Vertical Button Group -->
+    <div class="mb-4">
+      <h3>Vertical Button Group</h3>
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <button type="button" class="btn btn-success">Top</button>
+        <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-danger">Bottom</button>
+      </div>
+    </div>
+
+    <!-- Toggle Buttons -->
+    <div class="mb-4">
+      <h3>Toggle Buttons</h3>
+      <div class="btn-group" role="group" aria-label="Toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Option 1</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="btncheck2">Option 2</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-success" for="btncheck3">Option 3</label>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container my-5">
+    <h1 class="text-center text-primary mb-4">Bootstrap Spacing Utilities</h1>
+
+    <!-- Section with Margin -->
+    <div class="bg-light border p-3 mb-4">
+      <h2 class="text-secondary">Section with Margin</h2>
+      <p class="m-4 bg-primary text-white p-2">
+        This paragraph uses <code>m-4</code> to add margin around it and <code>p-2</code> for internal padding.
+      </p>
+    </div>
+
+    <!-- Section with Padding -->
+    <div class="bg-light border py-5 px-3 mb-4">
+      <h2 class="text-secondary">Section with Padding</h2>
+      <p class="bg-warning text-dark p-4">
+        This paragraph uses <code>py-5</code> (vertical padding) and <code>px-3</code> (horizontal padding) for the container, and <code>p-4</code> for the paragraph itself.
+      </p>
+    </div>
+
+    <!-- Spacing for Alignment -->
+    <div class="bg-light border p-3">
+      <h2 class="text-secondary">Alignment Using Margin</h2>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="bg-info text-white p-3 m-2">Box 1</div>
+        <div class="bg-success text-white p-3 m-2">Box 2</div>
+        <div class="bg-danger text-white p-3 m-2">Box 3</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container my-5">
+    <h1 class="text-center text-primary mb-4">Our Pricing Plans</h1>
+
+    <!-- Pricing Section -->
+    <div class="row">
+      <!-- Basic Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-primary h-100">
+          <div class="card-body text-center p-4">
+            <h5 class="card-title fw-bold">Basic Plan</h5>
+            <h6 class="card-subtitle mb-3 text-muted">$9.99/month</h6>
+            <ul class="list-unstyled">
+              <li>5 GB Storage</li>
+              <li>Basic Support</li>
+              <li>1 User</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-success h-100">
+          <div class="card-body text-center p-4">
+            <h5 class="card-title fw-bold">Standard Plan</h5>
+            <h6 class="card-subtitle mb-3 text-muted">$19.99/month</h6>
+            <ul class="list-unstyled">
+              <li>50 GB Storage</li>
+              <li>Priority Support</li>
+              <li>5 Users</li>
+            </ul>
+            <a href="#" class="btn btn-success mt-3">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-danger h-100">
+          <div class="card-body text-center p-4">
+            <h5 class="card-title fw-bold">Premium Plan</h5>
+            <h6 class="card-subtitle mb-3 text-muted">$29.99/month</h6>
+            <ul class="list-unstyled">
+              <li>Unlimited Storage</li>
+              <li>24/7 Support</li>
+              <li>Unlimited Users</li>
+            </ul>
+            <a href="#" class="btn btn-danger mt-3">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="p-4">
+    
+    <h2>Display Utilities Example</h2>
+  
+    <!-- Hidden on all but medium and up -->
+    <div class="d-none d-md-block bg-info text-white p-3 mb-3">
+      Visible on medium screens and larger (≥768px)
+    </div>
+  
+    <!-- Hidden on all but large and up, flex display -->
+    <div class="d-none d-lg-flex bg-success text-white p-3 mb-3 justify-content-center align-items-center" style="height: 100px;">
+      Flex container visible on large screens and larger (≥992px)
+    </div>
+  
+    <!-- Visible only on small screens -->
+    <div class="d-block d-md-none bg-warning text-dark p-3 mb-3">
+      Visible only on small screens (768px)
+    </div>
+    <div>
+  
+    <!-- Visible only on medium screens -->
+    <div class="d-none d-md-block bg-danger text-white p-3 mb-3">
+      Visible only on medium screens (≥768px)
+    </div>
+     </div>
+  </div>
+
+
+  <!-- Link Bootstrap Bundle JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

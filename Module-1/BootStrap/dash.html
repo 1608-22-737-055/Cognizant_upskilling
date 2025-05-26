@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard with Gradients</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body{
+        min-height: 100vh;
+        padding-bottom: 60px;
+    }
+
+    .sidebar {
+      background-color: #f8f9fa;
+      height: 100vh;
+      padding: 1rem;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .badge-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    
+  </style>
+</head>
+<body class="bg-light">
+  <!-- Header with Gradient Background -->
+  <header class="bg-primary bg-gradient text-white py-4 text-center">
+    <h1>Dashboard</h1>
+    <p>Admin Panel with Gradient Header</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Widget 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-dark text-white rounded">
+          <h5>Revenue</h5>
+          <p class="display-6">$55,000</p>
+        </div>
+      </div>
+
+      <!-- Widget 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-dark text-white rounded">
+          <h5>New Users</h5>
+          <p class="display-6">1,500</p>
+        </div>
+      </div>
+
+      <!-- Widget 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-dark text-white rounded">
+          <h5>Active Issues</h5>
+          <p class="display-6">72</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gradient Content Section -->
+    <div class="p-4 bg-secondary bg-gradient text-white rounded">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>Admin Michael approved 3 requests.</li>
+        <li>System generated the quarterly report.</li>
+        <li>User Amy updated account details.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar: hidden on small, visible on md+ -->
+      <nav class="col-md-3 d-none d-md-block sidebar">
+        <h4>Sidebar</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main content -->
+      <main class="col-12 col-md-9 py-3">
+        <h2>Main Content</h2>
+        <p>This area takes full width on small screens and shrinks on medium and larger screens to accommodate the sidebar.</p>
+      </main>
+    </div>
+  </div>
+
+  <div class="p-4">
+
+    <h2>Image with Borders and Rounded Corners</h2>
+  
+    <img 
+      src="https://images.unsplash.com/photo-1747835369484-97d3f0f782ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" 
+      alt="Sample Image" 
+      class="border border-primary border-3 rounded-circle"
+    />
+
+  </div>
+
+<div class="p-4 bg-light">
+    
+  <h2>Card with Shadow and Rounded Pill</h2>
+
+  <div class="card shadow-lg rounded-pill" style="max-width: 400px; margin: auto;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Stylish Card</h5>
+      <p class="card-text">This card uses large shadow and rounded-pill utilities.</p>
+      <a href="#" class="btn btn-primary">Action</a>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+    <h1>Page Content</h1>
+    <p>Scroll down to see the footer fixed at the bottom.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod orci non nibh cursus, in pretium arcu scelerisque.</p>
+    <p>...</p>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 w-100">
+    Fixed Footer Content &copy; 2025
+  </footer>
+
+  <div class="p-4">
+    <h2>Image with Overlay Badge</h2>
+
+  <div class="image-container">
+    <img src="https://images.unsplash.com/photo-1747835369484-97d3f0f782ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D" alt="Sample" class="img-fluid rounded" />
+    <span class="badge bg-danger badge-overlay">New</span>
+  </div>
+  </div>
+
+  <!-- Footer with Gradient -->
+  <footer class="bg-dark bg-gradient text-center text-white py-3 mt-4">
+    <p>&copy; 2025 Your Company. Designed with Bootstrap.</p>
+  </footer>
+  <!-- Link Bootstrap Bundle JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <header class="bg-primary text-white py-3 text-center">
+    <h1>Dashboard</h1>
+    <p>Welcome to the admin panel</p>
+  </header>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-success text-white rounded">
+          <h5>Revenue</h5>
+          <p class="display-6">$45,000</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-warning text-dark rounded">
+          <h5>New Users</h5>
+          <p class="display-6">1,200</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-danger text-white rounded">
+          <h5>Issues</h5>
+          <p class="display-6">85</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-light border rounded">
+      <h2 class="text-secondary">Recent Activity</h2>
+      <ul>
+        <li>User John added a new product.</li>
+        <li>System generated a monthly report.</li>
+        <li>Admin Jane resolved 5 issues.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->

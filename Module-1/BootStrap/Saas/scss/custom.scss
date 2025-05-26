@@ -1,0 +1,16 @@
+// Custom Bootstrap build
+
+// Import Bootstrap functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// Then variables so you can override
+@import "../node_modules/bootstrap/scss/variables";
+
+// Override variables here if needed
+// $primary: #ff6347;  // Example: change primary color to tomato
+$primary: #1abc9c;         // teal-ish primary color
+$border-radius: 1rem;      // larger rounded corners
+
+
+// Import rest of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
