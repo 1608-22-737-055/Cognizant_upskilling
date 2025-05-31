@@ -1,18 +1,48 @@
-// Objective: Check whether a string is a palindrome
-import java.util.Scanner;
-
+// Java Modules Example
+// Main module class
 public class Ex34 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine().toLowerCase().replaceAll("\\s+", "");
-        String reversed = new StringBuilder(str).reverse().toString();
+        // Demonstrate module usage
+        System.out.println("Main Module: com.greetings");
+        
+        // Using utility from com.utils module
+        StringUtils utils = new StringUtils();
+        String message = "Hello from Java Modules!";
+        
+        System.out.println("Original message: " + message);
+        System.out.println("Reversed: " + utils.reverse(message));
+        System.out.println("To upper case: " + utils.toUpper(message));
+        
+        // Using math utilities
+        MathUtils mathUtils = new MathUtils();
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println("Sum: " + mathUtils.sum(numbers));
+        System.out.println("Average: " + mathUtils.average(numbers));
+    }
+}
 
-        if (str.equals(reversed))
-            System.out.println("The string is a palindrome.");
-        else
-            System.out.println("The string is not a palindrome.");
+// Utility classes that would normally be in separate files/modules
+class StringUtils {
+    public String reverse(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+    
+    public String toUpper(String str) {
+        return str.toUpperCase();
+    }
+}
 
-        sc.close();
+class MathUtils {
+    public int sum(int[] numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum;
+    }
+    
+    public double average(int[] numbers) {
+        if (numbers.length == 0) return 0;
+        return (double) sum(numbers) / numbers.length;
     }
 }
