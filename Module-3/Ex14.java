@@ -1,26 +1,31 @@
-//PrimeCheck
-
+// Array Sum and Average Example
 import java.util.Scanner;
 
 public class Ex14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        boolean isPrime = true;
-
-        if (num <= 1) isPrime = false;
-        else {
-            for (int i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
+        
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        
+        // Read elements into array
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter element " + (i + 1) + ": ");
+            array[i] = sc.nextInt();
         }
-
-        if (isPrime) System.out.println(num + " is a prime number.");
-        else System.out.println(num + " is not a prime number.");
+        
+        // Calculate sum and average
+        int sum = 0;
+        for (int element : array) {
+            sum += element;
+        }
+        double average = (double) sum / n;
+        
+        // Display results
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+        
         sc.close();
     }
 }

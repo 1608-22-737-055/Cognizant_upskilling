@@ -1,21 +1,24 @@
-//Reverse a Number 
-
+// Recursive Fibonacci Example
 import java.util.Scanner;
 
 public class Ex13 {
+    // Recursive method to calculate nth Fibonacci number
+    public static int fibonacci(int n) {
+        if (n <= 1) return n;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        int reverse = 0;
+        System.out.print("Enter a positive integer n: ");
+        int n = sc.nextInt();
 
-        while (num != 0) {
-            int digit = num % 10;
-            reverse = reverse * 10 + digit;
-            num /= 10;
+        if (n < 0) {
+            System.out.println("Please enter a positive number");
+        } else {
+            System.out.println("The " + n + "th Fibonacci number is: " + fibonacci(n));
         }
 
-        System.out.println("Reversed number: " + reverse);
         sc.close();
     }
 }
